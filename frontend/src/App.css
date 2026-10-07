@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("src/assets/backkground.webpro.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hotels {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.hotel-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}

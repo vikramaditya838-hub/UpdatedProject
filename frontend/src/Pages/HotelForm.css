@@ -1,0 +1,184 @@
+.hotel-form-page {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 50px 20px;
+
+  background: #f5f8fb;
+}
+
+.hotel-form {
+  width: 100%;
+  max-width: 650px;
+
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+}
+
+.hotel-form h1 {
+  margin: 0 0 8px;
+
+  color: #12395b;
+
+  font-size: 32px;
+}
+
+.hotel-form > p {
+  margin-bottom: 30px;
+
+  color: #667788;
+}
+
+.hotel-form form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #34495e;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d8e0e8;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  background: white;
+
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 100px;
+
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #087fc1;
+
+  box-shadow: 0 0 0 3px rgba(8, 127, 193, 0.10);
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.form-submit {
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087fc1;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form-submit:hover {
+  background: #05689e;
+}
+
+.delete-button {
+  background: #dc3545;
+}
+
+.delete-button:hover {
+  background: #b02a37;
+}
+
+@media (max-width: 600px) {
+
+  .hotel-form-page {
+    padding: 25px 15px;
+  }
+
+  .hotel-form {
+    padding: 25px 20px;
+  }
+
+  .hotel-form h1 {
+    font-size: 26px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---- added for backend integration ---- */
+.image-preview {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.form-message {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-message.success {
+  background: #e6f6ec;
+  color: #1e7e34;
+}
+
+.form-message.error {
+  background: #fdecee;
+  color: #b02a37;
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

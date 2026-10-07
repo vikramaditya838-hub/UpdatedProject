@@ -1,0 +1,153 @@
+.hero {
+  padding: 80px 20px;
+  background: url("public/Imaage.1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Arial", sans-serif;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Arial", sans-serif;
+}
+
+.hero-description {
+  margin-bottom: 35px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Arial", sans-serif;
+}
+
+/* Search Containers */
+.hotel-search {
+  max-width: 700px;
+
+  margin-right: 2px;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Search Field */
+.search-field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.search-field label {
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+.search-field input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 13px 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.search-field input:focus {
+  border-color: #007bff;
+}
+
+/* Search Button */
+.search-button {
+  padding: 13px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #007bff;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hotel-search {
+    flex-wrap: wrap;
+  }
+
+  .search-field {
+    min-width: 200px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hotel-search {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 15px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
